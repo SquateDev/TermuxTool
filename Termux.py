@@ -130,5 +130,7 @@ def ipddos():
             print(Fore.RED + f" Произошла ошибка: {e}")
     if stop_sending:
         print(Fore.YELLOW + " Отправка сообщений остановлена.");
+	consoleclear();
+	main();
 
 main()
